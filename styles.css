@@ -119,6 +119,85 @@ nav {
   background-color: #112b5a;
 }
 
+.header-container{
+  max-width: 900px;
+}
+.header-container h1{
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+
+}
+.header-container p{
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+  color: #fff;
+  text-align: center;
+}
+.booking{
+  max-width: 400px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display:grid;
+  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+.booking-type{
+  width: fit-content;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  align-items: center;
+  background-color: #5484dd;
+  border-radius: 2px;
+
+}
+.booking-type > div{
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.booking-type > :is(div:hover,div.active) {
+  color: #5484dd;
+  background-color: #fff;
+}
+.booking-form{
+  padding: 1.5rem 1rem;
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+
+}
+.booking-input{
+  display: grid;
+  gap: 5px;
+}
+.booking-input label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+
+}
+.booking-input input{
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #333333;
+  outline: none;
+  border: 1px solid #f5f6f8;
+  border-radius: 2px;
+}
+.booking-btn{
+  text-align: right;
+}
 @media (min-width: 768px) {
   nav {
     padding: 2rem 1rem;
@@ -145,5 +224,13 @@ nav {
   }
   .header{
     padding-top: 0;
+  }
+  .booking{
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+  .booking-form{
+    padding: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
   }
 }
