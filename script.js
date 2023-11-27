@@ -11,3 +11,11 @@ navLinks.addEventListener("click", () => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
+
+const bookingType = document.getElementById("booking-type");
+bookingType.addEventListener("click", (e) => {
+  Array.from(bookingType.getElementsByTagName("div")).forEach((item) => {
+    item.classList.remove("active");
+  });
+  e.target.classList.add("active");
+});
