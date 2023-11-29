@@ -227,19 +227,103 @@ nav {
   font-weight: 800;
   color: #333333;
 }
-.service-card p{
+.service-card p {
   margin-bottom: 0.5rem;
   color: #767268;
 }
-.service-btn{
+.service-btn {
   text-align: right;
 }
-@media(min-width:576px){
-  .service-card{
+.offer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.offer-header a {
+  color: #5484dd;
+  transition: 0.3s;
+}
+.offer-header a:hover {
+  color: #112b5a;
+}
+.offer-grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+.offer-card {
+  padding: 1rem;
+  border-radius: 2px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.offer-card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.offer-card img {
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+.offer-card p {
+  margin-bottom: 1rem;
+  color: #767268;
+}
+.offer-card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer-card span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5484dd;
+}
+.offer-card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #333333;
+}
+.about-container {
+  display: grid;
+  gap: 2rem;
+}
+.about-container img {
+  max-width: 300px;
+  margin: auto;
+}
+.about-content ul {
+  margin-block: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+.about-content li span {
+  font-size: 1.2rem;
+  color: #5484dd;
+}
+.about-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.about-links img {
+  max-width: 150px;
+}
+@media (min-width: 576px) {
+  .service-card {
     flex-direction: row;
   }
-  .service-card img{
+  .service-card img {
     max-width: 200px;
+    height: 100%;
+  }
+  .offer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offer-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 @media (min-width: 768px) {
@@ -277,7 +361,14 @@ nav {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .service-grid{
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about-container{
     grid-template-columns: repeat(2,1fr);
+    align-items: center;
   }
 }
