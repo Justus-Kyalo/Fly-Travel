@@ -309,6 +309,45 @@ nav {
 .about-links img {
   max-width: 150px;
 }
+.client {
+  background-color: #f5f6f8;
+}
+.swiper {
+  width: 100%;
+  margin-top: 4rem;
+}
+.swiper-slide {
+  max-width: 400px;
+  padding-top: 4rem;
+}
+
+.client-card {
+  padding: 2rem;
+  padding-top: 0;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.client-card img {
+  max-width: 80px;
+  margin: auto;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.client-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+.client-card p {
+  color: #767268;
+}
+.client-ratings {
+  margin-block: 1rem;
+  color: goldenrod;
+}
 @media (min-width: 576px) {
   .service-card {
     flex-direction: row;
@@ -367,8 +406,8 @@ nav {
   .offer-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .about-container{
-    grid-template-columns: repeat(2,1fr);
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 }
