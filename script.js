@@ -24,3 +24,35 @@ const swiper = new Swiper(".swiper", {
   slidePerView: "auto",
   spaceBetween: 20,
 });
+
+//scroolReveal
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: "1000",
+};
+
+//header Container
+ScrollReveal().reveal(".header-container h1", { ...scrollRevealOption });
+
+ScrollReveal().reveal(".header-container p", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
+ScrollReveal().reveal(".header-container .booking", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+
+//Service Container
+ScrollReveal().reveal(".service-card", {
+  duration: 1000,
+  interval: 500,
+});
+
+//offer container
+ScrollReveal().reveal(".offer-card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
