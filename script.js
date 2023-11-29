@@ -19,3 +19,8 @@ bookingType.addEventListener("click", (e) => {
   });
   e.target.classList.add("active");
 });
+
+const swiper = new Swiper(".swiper", {
+  slidePerView: "auto",
+  spaceBetween: 20,
+});
