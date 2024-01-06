@@ -322,8 +322,7 @@ nav {
 }
 
 .client-card {
-  padding: 2rem;
-  padding-top: 0;
+  padding: 0rem 2rem 2rem 2rem;
   text-align: center;
   background-color: #fff;
   border-radius: 2px;
