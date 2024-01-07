@@ -32,7 +32,7 @@ const scrollRevealOption = {
   duration: "1000",
 };
 
-//header Container
+// inside header Container 
 ScrollReveal().reveal(".header-container h1", { ...scrollRevealOption });
 
 ScrollReveal().reveal(".header-container p", {
